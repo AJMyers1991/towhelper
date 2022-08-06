@@ -6,7 +6,9 @@ local function IsPlayerInTowTruck()
 	local tow1 = GetHashKey(Config.rollback1)
 	local tow2 = GetHashKey(Config.rollback2)
 	local tow3 = GetHashKey(Config.heavywrecker)
-	return IsVehicleModel(tvehicle, tow1) or IsVehicleModel(tvehicle, tow2) or IsVehicleModel(tvehicle, tow3)
+	local tow5 = GetHashKey(Config.rollback3)
+	local tow6 = GetHashKey(Config.rollback4)
+	return IsVehicleModel(tvehicle, tow1) or IsVehicleModel(tvehicle, tow2) or IsVehicleModel(tvehicle, tow3) or IsVehicleModel(tvehicle, tow5) or IsVehicleModel(tvehicle, tow6)
 end
 
 local function IsPlayerInHeavyWrecker()
